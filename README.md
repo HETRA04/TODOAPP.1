@@ -1,1 +1,1 @@
-To Do app using html and css
+To Do app using html and css.
