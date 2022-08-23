@@ -1,36 +1,33 @@
+// variables for buttons, input and containers
+const input = document.getElementById("addtext");
+const todocontainer = document.getElementById("myul") ;
+const submit = document.getElementById("submitbtn");
+const remove = document.getElementById("clearbtn");
 
-//selectors
-const todoinput = document.querySelector('.todo-input');
-const todobutton = document.querySelector('.todo-button');
-const todolist = document.querySelector('.todo-list');
 
-//eventlistener
-todobutton.addEventListener('click', addtodo);
 
-//functioality
 
-function addtodo(event){
-    event.preventDefault();
-    //tododiv
-    const tododiv = document.createElement("div");
-    tododiv.classList.add('todo');
-    //create list
-    const newtodo = document.createElement('li');
-    newtodo.innerText = document.getElementById("addtext").value;
-    newtodo.classList.add('todo-item');
-    tododiv.appendChild(newtodo);
-    //check mark button
-    const completedbutton = document.createElement('button');
-    completedbutton.innerHTML = '<i class="fas fa-check></li>'
-    completedbutton.classList.add('complete-btn')
-    tododiv.appendChild(completedbutton);
-    // delete button
-    const trashbutton = document.createElement('button');
-    trashbutton.innerHTML = '<i class="fas fa-trash></li>'
-    trashbutton.classList.add('complete-btn')
-    tododiv.appendChild(trashbutton);
-    //add to do list
-    todolist.appendChild(tododiv)
-    //clear
-    todoinput.value = "";
-} 
+submit.addEventListener('click', function(){
+    // prevent submit button if input is empty
+    
+    /* add list component and a remove button for
+    individual list components*/ 
+    var li = document.createElement('li');
+    li.innerText = input.value;
+    var but = document.createElement('button');
+    but.innerText = "remove";
+    todocontainer.appendChild(li);
+    todocontainer.appendChild(but);
+    but.onclick = function(){
+        todocontainer.removeChild(li);
+        todocontainer.removeChild(but);
+    }
+    // clear all task button
+    
+    input.value = ""
+
+})
+
+
+
+
