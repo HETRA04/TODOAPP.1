@@ -9,7 +9,12 @@ const remove = document.getElementById("clearbtn");
 
 submit.addEventListener('click', function(){
     // prevent submit button if input is empty
-    
+    /* if(input.value == ""){
+        submit.disabled = true;
+    }
+    else{
+        submit.disabled = false;
+    } */
     /* add list component and a remove button for
     individual list components*/ 
     var li = document.createElement('li');
