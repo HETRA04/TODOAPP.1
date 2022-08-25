@@ -1,17 +1,85 @@
 body{
-    background-color: orangered;
+    background: rgb(34,193,195);
+background: linear-gradient(80deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    color:black ;
 }
 
 #top{
-    background-color:white ;
-    border-style: solid;
-    border-width: 10px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    text-align: center;
+    font-family: 'Patua One', cursive;
+    align-items: center;
+    
     border-radius: 10px;
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
+    align-items: center;
+    
+}
+    
+    
+    
+#addtext{
+    font-size:30px ;
+    border-style:solid ;
+    border-radius: 5px;
+    
+}
+#submitbtn{
+    position: relative;
+    bottom: 1px;
+    height: 42px;
+    width: 40px;
+    background: rgb(47, 255, 141);
+    color: rgb(255, 38, 0);
+    font-size:25px ;
+    border-radius: 5px;
+    right: 35px;
+}
+#clearbtn{
+    position: relative;
+    bottom: 1px;
+    height: 40px;
+    width: 65px;
+    text-align: center;
+    background: red;
+    color: blue;
+    font-size:20px ;
+    font-weight: 100;
+    border-radius: 5px;
+    right: 40px;
+    
+}
+#myul{
+    font-size: 15px;
+    font-family: 'Patua One', cursive;
+    
+}
+#li{
+    position:relative;
+    font-size: 25px;
+    left: 350px;
+    top: 25px;
+    text-align:left;
+    
     
     
 }
-
+#but{
+    position: relative;
+    left: 155px;
+    height: 40px;
+    width: 80px;
+    font-size:20px ;
+    text-align: center;
+    background: red;
+    border-radius: 5px;
+    bottom: 29px;
+}
+#checker{
+    position: relative;
+    zoom: 3;
+    bottom: 6px;
+    right: 110px;
+    
+}
