@@ -41,7 +41,6 @@ submit.addEventListener('click', function(){
 })
 remove.addEventListener('click', function(){
     
-    todocontainer.reset();
 })
 
 
