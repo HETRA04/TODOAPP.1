@@ -48,20 +48,9 @@ body{
     border-radius: 5px;
     
 }
-#clearbtn{
+
     
-    bottom: 1px;
-    height: 40px;
-    width: 65px;
-    text-align: center;
-    background: red;
-    color: blue;
-    font-size:20px ;
-    font-weight: 100;
-    border-radius: 5px;
-    right: 40px;
-    
-}
+
 #myul{
     font-size: 15px;
     font-family: 'Patua One', cursive;

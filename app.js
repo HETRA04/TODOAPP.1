@@ -2,7 +2,7 @@
 const input = document.getElementById("addtext");
 const todocontainer = document.getElementById("myul") ;
 const submit = document.getElementById("submitbtn");
-const remove = document.getElementById("clearbtn");
+
 
 
 
@@ -35,13 +35,12 @@ submit.addEventListener('click', function(){
     
     
     
+    
 
     input.value = ""
 
 })
-remove.addEventListener('click', function(){
-    
-})
+
 
 
 
